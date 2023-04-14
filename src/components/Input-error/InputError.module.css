@@ -1,0 +1,54 @@
+.errorBlock {
+  background-color: #db7093;
+  position: fixed;
+  padding: 20px 40px;
+  min-width: 420px;
+  top: 10px;
+  border-radius: 4px;
+  border-right: 6px solid #c00f4a;
+  animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(+10%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(+10px);
+  }
+}
+
+.errorBlock span {
+  padding: 0 20px;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.errorIcon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #c00f4a;
+  font-size: 30px;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 10px;
+  top: 10%;
+  transform: translateY(50%);
+  color: #c00f4a;
+  cursor: pointer;
+}
+
+.closeIcon:hover {
+  color: #c00f4a7c;
+}

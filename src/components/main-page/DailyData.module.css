@@ -1,0 +1,76 @@
+.weekWeather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background: rgba(214, 214, 214, 0.4);
+  box-shadow: 3px -2px 14px -1px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  width: 130px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.1s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h2,
+.card span {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.card h2 {
+  text-shadow: -1.13852px 1.70778px 0.569258px rgba(0, 0, 0, 0.1);
+  margin: 15px 0 10px 0;
+}
+
+.card span {
+  margin-top: auto;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 100px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 960px) {
+  .card {
+    width: 130px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 710px) {
+  .card {
+    width: 100px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 460px) {
+  .weekWeather {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+  }
+
+  .card {
+    width: 130px;
+    height: 210px;
+    margin-bottom: 10px;
+  }
+}

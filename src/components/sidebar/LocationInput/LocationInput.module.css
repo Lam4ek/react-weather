@@ -1,0 +1,71 @@
+.locationForm {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.locationForm div {
+  display: flex;
+  align-items: center;
+}
+
+.locationForm div input {
+  height: 40px;
+  width: 90%;
+  margin-left: 25px;
+  border: none;
+  background: none;
+  outline: none;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.012em;
+  color: #ffffff;
+}
+
+.locationForm div input::placeholder {
+  opacity: 0.3;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+}
+
+.btn {
+  width: 30px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.623);
+  background: linear-gradient(
+    243.18deg,
+    #9065bc 0%,
+    rgba(255, 0, 108, 0.38) 100%
+  );
+  opacity: 0.4;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+  transition: 0.1s ease-in-out;
+}
+
+.btn:active {
+  transform: translateY(+3px);
+  opacity: 0.6;
+}
+
+@media (max-width: 1200px) {
+  .btn {
+    width: 50px;
+  }
+  .locationForm div input {
+    margin-left: 15px;
+    font-size: 22px;
+  }
+  .locationForm div input::placeholder {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .locationForm {
+    width: auto;
+  }
+}

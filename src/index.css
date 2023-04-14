@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pac-container {
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+}
+.pac-icon {
+  background-image: none;
+}
+.pac-item {
+  border: none;
+}
+
+body {
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  background: linear-gradient(
+    243.18deg,
+    #9065bc 0%,
+    rgba(255, 0, 108, 0.38) 100%
+  );
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.content {
+  width: 60%;
+  padding: 70px 50px 20px 50px;
+  min-height: 100vh;
+}
+
+@media (max-width: 960px) {
+  .content {
+    width: 100%;
+    padding: 15px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,149 @@
+.sidebar {
+  width: 40%;
+  background: hsla(0, 0%, 84%, 0.1);
+  box-shadow: -1px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 70px 50px 0 50px;
+  min-height: 100vh;
+  display: block;
+}
+
+.sunState {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.sunrise div,
+.sunset div {
+  width: 140px;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s ease-in-out;
+}
+
+.sunrise div span,
+.sunset div span {
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sunrise,
+.sunset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sunrise div:hover,
+.sunset div:hover {
+  transform: translateY(-6px);
+}
+
+.sunrise h3,
+.sunset h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 38px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sidebarDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsInfo1,
+.detailsInfo2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailsInfo1 {
+  margin: 55px 0 100px 0;
+}
+
+.sidebarDetails div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.showInfoContainer div {
+  border-top: 2px solid rgba(255, 255, 255, 0.26);
+  width: 90%;
+}
+
+.showInfo {
+  position: absolute;
+  right: 0;
+  top: -18px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.showInfo:active {
+  transform: translateY(+3px);
+  opacity: 0.6;
+}
+
+@media (max-width: 1200px) {
+  .sidebarDetails span {
+    font-size: 22px;
+  }
+  .detailsInfo1 {
+    margin: 55px 0 50px 0;
+  }
+
+  .sunrise div,
+  .sunset div {
+    width: 110px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 960px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    padding: 70px 50px;
+  }
+  .sunState {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .showInfoContainer div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 360px) {
+  .detailsInfo1,
+  .detailsInfo2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebarDetails div div {
+    display: block;
+  }
+  .sidebarDetails span {
+    margin-right: 10px;
+  }
+}
